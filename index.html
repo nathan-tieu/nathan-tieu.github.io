@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>nathan tieu</title>
         <meta name="description" content="nathan's portfolio website">
+        <!-- <link rel="stylesheet" href="css/style.css"> -->
+
         <style>
             body {
                 background-color: rgb(35, 36, 51);
@@ -15,29 +17,70 @@
             h2,
             h3,
             h4, 
-            h5,
-            h6 {
+            h5 {
                 font-size: 30px;
+            }
+
+            h6 {
+                font-size: 20px;
             }
 
             p {
                 font-size: 15px;
             }
 
+            .button {
+                font-family: 'Courier', Courier, monospace;
+                border: none;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                /* width: 150px; */
+            }
+
+            .linkedinbtn {
+                background-color: rgb(11, 11, 144);
+            }
+
+            .githubbtn {
+                background-color: rgb(55, 55, 55);
+            }
+
+            .white-text {
+                color:white;
+            }
+
             .green-text {
                 color: rgb(51, 186, 150);
             }
-            
+
+            .no-underline {
+                text-decoration: none;
+            }
         </style>
+
     </head>
 
     <body>
-        <!--header-->
+        <!-- header -->
         <h1>hi! i'm <span class="green-text">nathan tieu</span></h1>
-        <p>I am currently a fourth-year Computer Science student at Georgia Tech with concentrations in Intelligence and Media. I plan to </p>
+        <p>I am currently a fourth-year Computer Science student at Georgia Tech with concentrations in Intelligence and Media. I have extensive experience in <b>object oriented languages</b> such as <b>Python</b> and <b>Java</b>.</p>
+        <a class="no-underline" href="#contact">contact me!</a>
 
         
-        <h6>contact info</h6>
+
+        <!-- contact info -->
+        <h6 id="contact">reach out to me!</h6>
+        <ul>
+            <button class="button githubbtn"><a class="white-text no-underline" target="_blank" href="https://github.com/nathan-tieu" >github</a></button></li>
+        </ul>
+        <ul>
+            <button class="button linkedinbtn"><a class="white-text no-underline" target="_blank" href="https://www.linkedin.com/in/nathan-tieu/" >linkedin</a></button>
+        </ul>
 
     </body>
 </html>
