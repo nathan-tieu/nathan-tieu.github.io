@@ -4,11 +4,17 @@
         <meta charset="utf-8">
         <title>nathan tieu</title>
         <meta name="description" content="nathan's portfolio website">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- <link rel="stylesheet" href="css/style.css"> -->
 
         <style>
+            img {
+                max-width: 100%;
+            }
             body {
-                background-color: rgb(35, 36, 51);
+                margin: 150px 30px 0px 80px;
+                line-height: 2.2em;
+                background-color: #232433;
                 color: white;
                 font-family: 'Courier', Courier, monospace;
             }
@@ -17,49 +23,68 @@
             h2,
             h3,
             h4, 
-            h5 {
+            h5,
+            h6 {
+                font-family: 'Courier', Courier, monospace;
                 font-size: 30px;
             }
 
             h6 {
-                font-size: 20px;
+                font-size: 25px !important;
+                margin-bottom: 20px;
             }
 
             p {
-                font-size: 15px;
+                font-size: 20px;
             }
 
-            .button {
-                font-family: 'Courier', Courier, monospace;
-                border: none;
-                padding: 15px 20px;
-                text-align: center;
+            a {
+                color: white;
                 text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                /* width: 150px; */
             }
 
-            .linkedinbtn {
-                background-color: rgb(11, 11, 144);
+            a.button {
+                font-family: sans-serif;
+                border: none;
+                background: #eee;
+                color: #FFFFFF;
+                font-weight: bold;
+                border-radius: 40px;
+                padding: 13px 25px;
+                font-size: 14px;
+                line-height: normal;
+                overflow: hidden;
+                transition: all 0.2s ease;
+                width: 50px;
             }
 
-            .githubbtn {
-                background-color: rgb(55, 55, 55);
+            a.button:hover {
+                color: #BBA0CA;
+            }
+            a.button.button-bg {
+                background: #474559;
+            
+            }
+            a.button.button:hover {
+                background: #BBA0CA !important;
+                color: #FFFFFF !important;
             }
 
-            .white-text {
-                color:white;
+            a:hover {
+                color: white;
             }
 
             .green-text {
-                color: rgb(51, 186, 150);
+                color: #33BA96;
             }
 
-            .no-underline {
-                text-decoration: none;
+            .container {
+                display: flex;
+                align-items: center;
+            }
+
+            .image {
+                flex-basis: 100%;
             }
         </style>
 
@@ -67,20 +92,48 @@
 
     <body>
         <!-- header -->
-        <h1>hi! i'm <span class="green-text">nathan tieu</span></h1>
-        <p>I am currently a fourth-year Computer Science student at Georgia Tech with concentrations in Intelligence and Media. I have extensive experience in <b>object oriented languages</b> such as <b>Python</b> and <b>Java</b>.</p>
-        <a class="no-underline" href="#contact">contact me!</a>
+        <div class="w3-row">
+            <div class="w3-col w3-container">
+                <h1 id="top"><strong>hi! i'm <span class="green-text">nathan tieu</span></strong></h1>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="container"> -->
+            <!-- <div id="about-me"> -->
+        <div class="w3-row">
+            <div class="w3-col w3-container m8 l9">  
+                <p>I am currently a fourth-year Computer Science student at Georgia Tech with concentrations in Intelligence and Media. I have extensive experience in <b>object oriented languages</b> such as <b>Python</b> and <b>Java</b>.</p>
+            </div>
+            <!-- <div class="image"> -->
+            <div class="w3-col w3-container m4 l3">
+                <img src="images/headshot_circle.png" width="250">
+            </div>
+        </div>
+        
+        <div class="w3-row w3-container">
+            <a target="_blank" href="https://drive.google.com/file/d/1BhEl3btUa0noDQH7U1ws8v4D37uzdzMt/view?usp=share_link" style="background-color: #727578" class="button">resume</a>
+            <a href="#contact" style="background-color: #33BA96" class="button">contact me!</a>
+        </div>
+
 
         
+        <br>
 
         <!-- contact info -->
-        <h6 id="contact">reach out to me!</h6>
-        <ul>
-            <button class="button githubbtn"><a class="white-text no-underline" target="_blank" href="https://github.com/nathan-tieu" >github</a></button></li>
-        </ul>
-        <ul>
-            <button class="button linkedinbtn"><a class="white-text no-underline" target="_blank" href="https://www.linkedin.com/in/nathan-tieu/" >linkedin</a></button>
-        </ul>
+        <div class="w3-row">
+            <div class="w3-col w3-container">
+                <h6 id="contact">reach out to me!</h6>
 
+                <a target="_blank" href="https://github.com/nathan-tieu" style="background-color: #161B21" class="button">github</a>
+                <a target="_blank" href="https://www.linkedin.com/in/nathan-tieu/" style="background-color: #0C66C3" class="button">linkedin</a>
+                <a target="_blank" href="mailto:nathantieu@outlook.com" style="background-color: #E84855" class="button">email</a>
+
+                <br><br>
+
+                <a href="#top" style="color:lightblue; text-decoration:underline;">return to the top</a>
+            </div>
+        </div>
     </body>
 </html>
